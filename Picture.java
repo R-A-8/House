@@ -10,6 +10,7 @@
  * @version 7.0
  */
 public class Picture
+
 {
     private Square wall;
     private Square window;
@@ -17,6 +18,7 @@ public class Picture
     private Circle sun;
     private boolean drawn;
     private Circle sun2;
+    private boolean sunset;
 
     /**
      * Constructor for objects of class Picture
@@ -58,12 +60,27 @@ public class Picture
             sun.moveVertical(-40);
             sun.changeSize(80);
             sun.makeVisible();
-            sun2.changeColor("magenta");
-            sun2.moveHorizontal(-100);
-            sun2.moveVertical(-70);
-            sun2.changeSize(80);
-            sun2.makeVisible();
+            
+            
+            
+            
             drawn = true;
+        }
+    }
+    /**
+     * Draw this picture.
+     */
+    public void sunset()
+    {
+        if(!sunset) {
+            
+            sun.changeColor("magenta");
+           
+            sun.slowMoveVertical(300);
+            sun.changeSize(80);
+            sun.makeVisible();
+            
+            sunset = true;
         }
     }
 
@@ -90,4 +107,5 @@ public class Picture
         sun.changeColor("yellow");
         sun2.changeColor("magenta");
     }
+    
 }
