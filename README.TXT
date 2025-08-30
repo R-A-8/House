@@ -19,3 +19,7 @@ uses the shapes to draw a picture. It can be used to experiment with
 modifying source code.
 PART IV
 14. The class Picture makes the drawing thanks to its code.
+Challenge "Make a person walk up to the house after the sunset.":
+   I wrote "Private Person person1;" at the top of the Picture code.
+   I wrote "person1 = new Person();" in the "public picture" section.
+   I wrote "person1.makeVisible();" under the if(!sunset) section. 
