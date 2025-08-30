@@ -23,3 +23,6 @@ Challenge "Make a person walk up to the house after the sunset.":
    I wrote "Private Person person1;" at the top of the Picture code.
    I wrote "person1 = new Person();" in the "public picture" section.
    I wrote "person1.makeVisible();" under the if(!sunset) section. 
+I wrote I added "person1.slowMoveHorizontal(-140);" under the previous line.
+I changed the xPosition and yPosition to 400 and 220 respectively (in the Person class).
+
